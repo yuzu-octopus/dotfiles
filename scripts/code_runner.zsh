@@ -258,12 +258,7 @@ case "$EXT" in
             cargo run --quiet --manifest-path "$DIR_PATH/Cargo.toml" -- "${PASS_ARGS[@]}"
         else
             local BIN_NAME="${FILE_PATH%.*}"
-            local TRAP_CMD="cleanup_bin '$BIN_NAME'"
-            # Chain with any existing EXIT trap
-            local existing_trap
-            existing_trap=$(trap -p EXIT 2>/dev/null | sed "s/trap -- '//;s/' EXIT$//")
-            [[ -n "$existing_trap" ]] && TRAP_CMD="$existing_trap; $TRAP_CMD"
-            trap "$TRAP_CMD" EXIT
+            trap "cleanup_bin '$BIN_NAME'" EXIT
 
             print_header "rustc $REL_PATH && ./$FILENAME:r"
             rustc "$FILE_PATH" -o "$BIN_NAME" && run_with_tracking "$BIN_NAME" "${PASS_ARGS[@]}"
@@ -274,11 +269,7 @@ case "$EXT" in
     cpp|cc|cxx|c)
         local compiler="g++"; [[ "$EXT" == "c" ]] && compiler="gcc"
         local BIN_NAME="${FILE_PATH%.*}"
-        local TRAP_CMD="cleanup_bin '$BIN_NAME'"
-        local existing_trap
-        existing_trap=$(trap -p EXIT 2>/dev/null | sed "s/trap -- '//;s/' EXIT$//")
-        [[ -n "$existing_trap" ]] && TRAP_CMD="$existing_trap; $TRAP_CMD"
-        trap "$TRAP_CMD" EXIT
+        trap "cleanup_bin '$BIN_NAME'" EXIT
 
         print_header "$compiler $REL_PATH && ./$FILENAME:r"
         $compiler "$FILE_PATH" -o "$BIN_NAME" && run_with_tracking "$BIN_NAME" "${PASS_ARGS[@]}"
