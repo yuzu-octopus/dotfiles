@@ -43,6 +43,9 @@ your shell.
 - **[starship.toml](./starship.toml)** — Starship prompt configuration
 - **[.omp/](./.omp/)** — Agent context (AGENTS, APPEND_SYSTEM, PERSONALITY,
   RULES, agents, skills, rules). Account emails redacted; re-add locally.
+- **[.agents/.skill-lock.json](./.agents/.skill-lock.json)** — Manifest of
+  the 59 global skills (sources, hashes). Reference copy; not installed
+  by install.sh.
 
 ## Related
 
