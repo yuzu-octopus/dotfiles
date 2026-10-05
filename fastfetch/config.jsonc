@@ -9,7 +9,6 @@
     },
     "printRemaining": true,
     "preserveAspectRatio": true,
-    "recache": false,
     "position": "left",
     "color": {
       "1": "#BD93F9",
