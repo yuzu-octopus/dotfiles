@@ -48,8 +48,8 @@ Workers inherit the full search tool stack from `deep-research` skill:
 Follow the `deep-research` skill (loaded). You own Phases 1–5:
 
 1. Write `docs/research/<slug>/brief.md` — decision, answer form, scope, angles. Assumptions written in, never block on questions (Main already asked pre-dispatch).
-2. Fan out one worker per angle in a single `task` batch. Workers write `findings/F<N>.md`, return 3–5 line summaries.
-3. Gap check → re-dispatch narrower workers. Conflicts → dedicated reconciliation worker (which source wins and why: conditions / definitions / stale / wrong). Saturation → stop that angle.
+2. Count angles. At 12 or fewer, fan out one worker per angle in a single `task` batch (flat). Above 12, group into 2–4 clusters and dispatch one `task` manager per cluster — managers merge their cluster, never write the report. Community-discourse angles go to `{agent: "gossip"}` or the gossip script; gossip stays a leaf worker. Workers write `findings/F<N>.md`, managers `findings/C<N>.md`; all return 3–5 line summaries.
+3. Acceptance gate per findings file (sources, dates, confidence), then gap check → re-dispatch narrower workers. Conflicts → dedicated reconciliation worker (which source wins and why: conditions / definitions / stale / wrong). Saturation → stop that angle.
 4. Quality gate: every facet investigated, major claims 2+ independent sources, conflicts reconciled, numbers sourced, no major gaps. Any unchecked → more workers, no early report.
 5. Write `REPORT.md` yourself, single pass, answer-first. Deep mode: citation verification pass before final.
 

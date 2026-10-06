@@ -70,13 +70,13 @@ Sharpened question materially different from what the user asked? Confirm before
 
 ## Step 2 — Plan
 
-Decompose brief into 3-8 **independent** angles. Lenses: core facts/definitions · recent developments · quantitative data/benchmarks · counter-arguments & failure cases · practitioner experience (forums, issues) · academic work · key players/alternatives.
+Decompose brief into 3-8 **independent** angles. Lenses: core facts/definitions · recent developments · quantitative data/benchmarks · counter-arguments & failure cases · practitioner experience (forums, issues) · community discourse (threads, practitioner chatter) · academic work · key players/alternatives.
 
 Counter-angle queries use failure-mode patterns: `"X problems"`, `"migrating away from X"`, `"X postmortem"` — critical sources are underrepresented because vendors publish more than victims.
 
-Done when: angle list covers the brief, and the counter-angle exists. List angles in `brief.md` under `## Angles`. Deep mode or contested topic → show angle list to user for quick confirm via `ask` (Main only).
+**Size trigger.** Count angles after decomposition. At 12 or fewer, dispatch flat (Step 3a). Above 12, group into 2–4 clusters by affinity and note the grouping in the brief under `## Clusters`; dispatch goes through managers (Step 3b). Twelve leaves headroom: follow-up rounds add angles, and the trigger fires before the coordinator's context becomes the bottleneck, not after. The researcher applies this at runtime — it is not a user-facing mode.
 
-## Step 3 — Parallel research
+## Step 3a — Parallel research (flat, default)
 
 Spawn one worker per angle in **single `task` call** (parallel). Template:
 
@@ -97,6 +97,7 @@ Tools available:
 - Firecrawl (`firecrawl_scrape`, `firecrawl_research_search_papers`, `firecrawl_research_search_github`) — clean scrapes, arXiv/paper searches, repo discovery
 - MinerU (`xd://mcp__mineru_parse_documents`) — PDF/spec/image parsing
 - Direct `read <url>` — instant webpage reading
+- Gossip script (`~/.omp/agent/scripts/gossip.py`) — community discourse: Reddit, HN threads, YouTube transcripts, arXiv, GitHub, Polymarket, RSS. Practitioner-experience and community-discourse angles use this first; `{agent: "gossip"}` for a dedicated discourse sweep returning consensus/disagreement/gaps.
 
 You are a worker. Never spawn subagents.
 
@@ -116,6 +117,36 @@ Return 3-5 line caveman summary only.
 
 Each worker: ONE angle only; findings to `findings/F<N>.md`; return 3-5 caveman lines. Fail or thin results → note, move on; do not block other angles.
 
+## Step 3b — Clustered research (triggered, angles above 12)
+
+Dispatch one `task` agent per cluster from the brief's `## Clusters`. Managers
+merge and reconcile a cluster; they do no independent research and never write
+the report. Template:
+
+```
+Own ONE cluster of angles. You may spawn workers via `task`, one per angle in
+this cluster — nothing else. Output caveman full.
+
+For each angle: dispatch worker, collect its findings file, note conflicts
+within the cluster and which source wins and why (conditions / definitions /
+stale / wrong). Merge surviving claims into `findings/C<N>.md` with the same
+shape as a worker file (Claims / Searches / Conflicting evidence / Gaps),
+plus a `## Cluster verdict` of 3-5 lines.
+
+You are a leaf-merger, not a researcher. Never search independently; every
+claim traces to a worker's findings file. Never spawn beyond one level —
+your workers are leaves.
+
+Return the cluster verdict only, 3-5 lines.
+```
+
+One angle per worker still holds: a manager dispatches the same worker
+template from Step 3a, scoped to its cluster. Workers stay leaves — at
+depth 3 they lose `task` anyway, which enforces it mechanically.
+
+Flat runs and manager runs are disjoint: the trigger fires strictly before
+first dispatch. A worker already dispatched flat is never promoted.
+
 ## Step 4 — Reflect (gap check)
 
 Read all `findings/*.md`. Against `brief.md`:
@@ -124,6 +155,13 @@ Read all `findings/*.md`. Against `brief.md`:
 - Major claims on single source? → corroboration dispatch.
 - **Conflicts → reconciliation dispatch** (dedicated worker): input = both claims + sources. Job: which source wins and why (different conditions / different definitions / stale / one wrong — state which), what claim to carry forward. Never smooth over with "opinions differ" — the boundary between two right answers is often the real answer.
 - Same sources returning repeatedly? → angle saturated, stop it.
+- **Step repetition.** One angle per worker — never two workers on overlapping angles. Dedupe sources before dispatch, stop saturated angles immediately. Repetition is the top observed failure mode; every duplicate finding costs context and adds no evidence.
+
+**Acceptance gate (per file, before synthesis).** Each findings or cluster file
+must carry sources, fetch dates, and confidence tags on major claims. Any file
+missing them goes back for re-dispatch, not into the gaps section. Per-source
+verification beats end-of-report checks; a missing citation found here costs a
+worker round, found later costs the report.
 
 Follow-up budget: 1 round (standard), 2 (deep). Budget done or coverage sufficient → proceed. Record unresolved gaps → report's "Open questions".
 
