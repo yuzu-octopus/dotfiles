@@ -36,7 +36,7 @@ esac
 
 # Agent context. RULES.md holds private account emails upstream, so the
 # repo copy is redacted: never overwrite a real one.
-for f in AGENTS.md APPEND_SYSTEM.md PERSONALITY.md agents/researcher.md skills/deep-research/SKILL.md rules/composio.md rules/git-init-commits.md rules/no-brew-install.md rules/no-curl-pipe-sh.md rules/no-git-commit-push.md rules/no-npm-npx.md rules/no-python3.md rules/no-rm-rf.md rules/no-system-pip-install.md; do
+for f in AGENTS.md APPEND_SYSTEM.md PERSONALITY.md agents/researcher.md agents/codebase-memory.md agents/codebase-memory-scout.md agents/codebase-memory-auditor.md agents/gossip.md skills/deep-research/SKILL.md skills/codebase-memory/SKILL.md rules/composio.md rules/git-init-commits.md rules/commit-author-fidelity.md rules/no-bash-grep.md rules/no-brew-install.md rules/no-curl-pipe-sh.md rules/no-git-commit-push.md rules/no-npm-npx.md rules/no-python3.md rules/no-rm-rf.md rules/no-system-pip-install.md; do
     put ".omp/$f" "$HOME/.omp/agent/$f"
 done
 if [ -f "$HOME/.omp/agent/RULES.md" ]; then

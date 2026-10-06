@@ -267,7 +267,9 @@ case "$EXT" in
 
     # ── C / C++ ─────────────────────────────────────────────────────────────
     cpp|cc|cxx|c)
+        # Homebrew GCC has bits/stdc++.h; Apple clang does not.
         local compiler="g++"; [[ "$EXT" == "c" ]] && compiler="gcc"
+        if command -v "${compiler}-16" >/dev/null; then compiler="${compiler}-16"; fi
         local BIN_NAME="${FILE_PATH%.*}"
         trap "cleanup_bin '$BIN_NAME'" EXIT
 

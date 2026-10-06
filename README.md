@@ -41,8 +41,10 @@ your shell.
 - **[scripts/code_runner.zsh](./scripts/code_runner.zsh)** — Polyglot file
   runner with Dracula-themed output
 - **[starship.toml](./starship.toml)** — Starship prompt configuration
-- **[.omp/](./.omp/)** — Agent context (AGENTS, APPEND_SYSTEM, PERSONALITY,
-  RULES, agents, skills, rules). Account emails redacted; re-add locally.
+- **[.omp/](./.omp/)** — Agent context: AGENTS, APPEND_SYSTEM, PERSONALITY,
+  RULES, five agent definitions (researcher, gossip, codebase-memory family),
+  two skills (deep-research, codebase-memory), ten rules. Account emails
+  redacted; re-add locally.
 - **[.agents/.skill-lock.json](./.agents/.skill-lock.json)** — Manifest of
   the 59 global skills (sources, hashes). Reference copy; not installed
   by install.sh.
