@@ -49,6 +49,19 @@ your shell.
   the 59 global skills (sources, hashes). Reference copy; not installed
   by install.sh.
 
+`APPEND_SYSTEM.md` is generated, not hand-edited. After `npx skills update`,
+run `~/.omp/agent/scripts/build-append-system.py` to re-splice the ponytail,
+caveman, unslop, and codebase-memory skill bodies into the header and footer
+fragments. Overrides in that script fail loudly when upstream text drifts, so
+a silent regeneration can never drop a local deviation.
+
+- **[.omp/scripts/gossip.py](./.omp/scripts/gossip.py)** — Multi-source
+  social/technical chatter reader behind the `gossip` agent (HN, Reddit,
+  arXiv, GitHub, YouTube, RSS, Polymarket). Needs `gh`, `yt-dlp`, and network
+  access; adapters degrade independently.
+- **[.omp/scripts/build-append-system.py](./.omp/scripts/build-append-system.py)**
+  — Regenerates `APPEND_SYSTEM.md` from upstream skills plus local overrides.
+
 ## Related
 
 - Portfolio site showcasing these configs:

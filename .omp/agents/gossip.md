@@ -55,7 +55,7 @@ truncated, so a dozen results cost a few hundred tokens. Run it directly; the
 shebang resolves the interpreter.
 
 ```
-G=/Users/yuzu/.omp/agent/scripts/gossip.py
+G=~/.omp/agent/scripts/gossip.py
 
 $G sources --deep                                    # health-check every adapter
 $G search "query" --sources hackernews,arxiv --limit 8 --days 30

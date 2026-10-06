@@ -39,6 +39,10 @@ esac
 for f in AGENTS.md APPEND_SYSTEM.md PERSONALITY.md agents/researcher.md agents/codebase-memory.md agents/codebase-memory-scout.md agents/codebase-memory-auditor.md agents/gossip.md skills/deep-research/SKILL.md skills/codebase-memory/SKILL.md rules/composio.md rules/git-init-commits.md rules/commit-author-fidelity.md rules/no-bash-grep.md rules/no-brew-install.md rules/no-curl-pipe-sh.md rules/no-git-commit-push.md rules/no-npm-npx.md rules/no-python3.md rules/no-rm-rf.md rules/no-system-pip-install.md; do
     put ".omp/$f" "$HOME/.omp/agent/$f"
 done
+for f in scripts/append-header.md scripts/append-footer.md scripts/build-append-system.py scripts/gossip.py; do
+    put ".omp/$f" "$HOME/.omp/agent/$f"
+done
+if [ "$DRY" = 0 ]; then chmod +x "$HOME/.omp/agent/scripts/build-append-system.py" "$HOME/.omp/agent/scripts/gossip.py" 2>/dev/null; fi
 if [ -f "$HOME/.omp/agent/RULES.md" ]; then
     echo "SKIP  $HOME/.omp/agent/RULES.md (exists, repo copy is redacted)"
 else
