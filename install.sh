@@ -29,6 +29,16 @@ put fastfetch/config.jsonc   "$HOME/.config/fastfetch/config.jsonc"
 put fastfetch/fastfetch-wifi "$HOME/.config/fastfetch/fastfetch-wifi"
 if [ "$DRY" = 0 ]; then chmod +x "$HOME/.config/fastfetch/fastfetch-wifi" 2>/dev/null; fi
 
+# Linter/typechecker globals. Biome also needs the App Support symlink on macOS
+# (biome reads ~/Library/Application Support/biome/biome.json, not ~/.config).
+put ruff/ruff.toml   "$HOME/.config/ruff/ruff.toml"
+put ty/ty.toml       "$HOME/.config/ty/ty.toml"
+put biome/biome.json "$HOME/.config/biome/biome.json"
+if [ "$DRY" = 0 ] && [ "$(uname -s)" = Darwin ]; then
+    mkdir -p "$HOME/Library/Application Support/biome"
+    ln -sfn "$HOME/.config/biome/biome.json" "$HOME/Library/Application Support/biome/biome.json"
+fi
+
 case "$(uname -s)" in
     Darwin) put ghostty/config "$HOME/Library/Application Support/com.mitchellh.ghostty/config.ghostty" ;;
     *)      put ghostty/config "$HOME/.config/ghostty/config" ;;

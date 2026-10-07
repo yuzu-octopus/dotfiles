@@ -30,6 +30,13 @@
 - **One agenda per turn.** Every assistant turn advances one phase toward completion (read context → implement → verify → report). Never interleave a round trip of a different phase into the middle of another.
 - **Structural code lookup:** relationships (callers/callees, data flow, impact, dead code, architecture) → `codebase-memory` graph first, `check_index_coverage` on cited paths, reindex if stale. Syntax shapes (call/decl/import patterns) → `ast_grep`; codemods → `ast_edit`/`lsp rename`. Literal strings/comments/config → `grep`. Graph before grep for structure, never grep-only for callers/definitions.
 
+## Verify
+
+- Python: `ruff check --fix` → `ruff format` → `ty check` on agent-edited files (safe fixes auto-applied), report-only elsewhere. Order: lint first (syntax noise drowns type signal), typecheck last (slowest, highest signal).
+- JS/TS: `biome check --write` on agent-edited files (safe fixes auto-applied, fewer round trips), `biome check` report-only elsewhere. Single pass covers lint + format + organizeImports.
+- React: above plus `skill://react-doctor` before commit.
+- Globals are a safety net, not enforcement: `~/.config/ruff/ruff.toml` (fallback-only), `~/.config/ty/ty.toml` (merged, project wins), `~/.config/biome/biome.json` (fallback-only, symlinked to App Support on macOS). Repo config shadows or wins — never assume global applied. tsc lives in the repo (devDependency); never global.
+
 ## Delivery
 
 - Execution is default: for a well-scoped request, inspect context, implement, verify, and report. Write a plan only for cross-cutting/high-risk work or when asked.

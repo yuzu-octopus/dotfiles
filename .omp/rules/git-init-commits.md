@@ -1,8 +1,8 @@
 ---
 name: git-init-commits
-description: "Always run git init on a new project and make atomic commits with clear messages"
-condition: ["git init", "git commit -m"]
+description: "New code projects start with git init; commits stay atomic with conventional messages"
+condition: "\\bgit\\s+(init|commit)\\b"
 scope: "tool:bash"
 ---
 
-Every new project MUST start with `git init` (or equivalent for monorepos). Each change set should be one atomic commit with a clear, conventional-commit message (feat:, fix:, chore:, docs:). Never leave work uncommitted or bundle unrelated concerns into one giant commit. If the repo is already initialized, verify `.gitignore` is in place before the first commit, and ensure each commit passes tests/CI.
+New code project only (not dotfiles, not edits inside an existing repo): `git init` first, `.gitignore` before the first commit. One change set = one atomic commit, conventional message (`feat:`, `fix:`, `chore:`, `docs:`). Permission stays with `no-git-commit-push`: never commit or push unless explicitly asked — this rule shapes the commit, never authorizes it.

@@ -1,0 +1,8 @@
+# Global ty config — placeholder (ty 0.0.x beta, FP-heavy).
+# Merges with project config (project wins scalars); user + project both load.
+# error-on-warning defaults true already — file kept so the global slot exists
+# when a real knob lands. Revisit at ty stable.
+# strict-equality-semantics / strict-generic-narrowing stay OFF (documented high FP).
+
+[terminal]
+error-on-warning = true

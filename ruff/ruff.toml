@@ -1,0 +1,72 @@
+# Global Ruff config — strict for AI-written code
+# Fallback only: any repo [tool.ruff] shadows this entirely.
+# Simple keys only: no path-glob per-file-ignores/exclude (ruff #8795).
+# Verified via Context7 ruff docs, ruff 0.16.10, 2026-10-07.
+
+line-length = 100
+# target-version is a fallback: ancestor pyproject requires-python overrides it.
+target-version = "py314"
+required-version = ">=0.16.10"
+
+
+[lint]
+select = [
+    "E",      # pycodestyle errors
+    "W",      # pycodestyle warnings
+    "F",      # pyflakes — undefined names, redefinitions
+    "I",      # isort — import sorting
+    "N",      # pep8-naming
+    "UP",     # pyupgrade — Union -> |, f-strings
+    "B",      # flake8-bugbear — mutable defaults, etc.
+    "SIM",    # flake8-simplify
+    "C4",     # flake8-comprehensions
+    "RUF",    # ruff-specific
+    "PERF",   # perflint
+    "ANN",    # annotations — highest-value AI rule
+    "D",      # docstrings — AI documents what it built
+    "S",      # bandit — exec, pickle, shell=True
+    "BLE",    # blind-except
+    "EM",     # err-msg — no string literals in raise
+    "TRY",    # tryceratops — exception hygiene
+    "A",      # builtins shadow
+    "RET",    # return — dead code, redundant else
+    "ARG",    # unused arguments
+    "PTH",    # pathlib over os.path
+    "DTZ",    # naive datetimes
+    "C90",    # mccabe complexity
+    "FBT",    # boolean-trap args
+    "T10",    # debugger — leftover breakpoint()/pdb
+    "T20",    # print — force logging
+    "ERA",    # commented-out code — AI leaves dead blocks
+]
+
+ignore = [
+    "E501",   # formatter handles wrapping
+    "ANN401", # Any sometimes needed — FP with type aliases
+    "D105",   # magic methods without docstrings — AI generates many
+    "D107",   # __init__ without docstring
+    "TRY003", # conflicts EM — long raise messages
+    "COM812", # redundant with formatter
+    "COM819", # same formatter-avoid list as COM812 — linter/format disagree
+]
+
+[lint.per-file-ignores]
+# basename-only patterns only — safe under extend (#8795)
+"__init__.py" = ["F401"]
+
+[lint.isort]
+force-sort-within-sections = true
+split-on-trailing-comma = true
+
+[lint.pydocstyle]
+convention = "google"
+
+[lint.mccabe]
+max-complexity = 10
+
+[format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"
+skip-magic-trailing-comma = false
+docstring-code-format = false
