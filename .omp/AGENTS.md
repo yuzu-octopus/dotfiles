@@ -6,18 +6,17 @@
 - Batch phases: implement → tests → review → run once
 - One agenda per turn
 - Delete over add, boring over clever
-- Subagent routing: codebase-memory-scout (graph lookup) / scout (broad search) → researcher (external research) → reviewer / security-reviewer / codebase-memory-auditor (graph audit) → sonic (mechanical) → task (default implementation)
-- Tool defaults: Python 3.14 via uv; Bun/TS for web
+- Subagent routing: scout (broad search) → researcher (external research) → reviewer / security-reviewer (code review) → sonic (mechanical) → task (default implementation)
+- Tool defaults: Python 3.15 via uv; Bun/TS for web
 
 ## MCP routing (by task, no global order)
 
 - Library docs: context7
 - PDFs, Office docs, images, document URLs: mineru `parse_documents` first
 - Authenticated app actions (Gmail, Drive, GitHub, etc.): composio; never web research
-- Deterministic math, units, computation: wolfram
-- Code structure (callers, callees, data flow, impact, dead code): `codebase-memory` graph first, `ast_grep` for syntax shapes, `grep` literal text only
-- Structured data, JSON, CSV, SQLite, complex pipelines: nushell; simple single commands bash
+- Code structure (callers, callees, data flow, impact, dead code): `scout` subagent, or `ast_grep` for syntax shapes; `grep` for literal text only
 - Interactive browser (click, forms, login, dynamic pages): tinyfish automation tools only, never for search
+- Web search + page fetch: tinyfish `search`/`fetch_content`; complex pipelines or data shaping: `eval` (py/js kernel) or `jq`
 
 ## Research (6-question shootout, 2026-09-19)
 

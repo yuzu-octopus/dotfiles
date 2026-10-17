@@ -8,7 +8,7 @@ description: >
   preprints, "what are people saying about X", or any question whose answer
   lives in discussion.
   NOT for official documentation (context7), current news (web_search),
-  or codebase structure (codebase-memory).
+  or code structure (scout).
 model: "@slow"
 tools:
   - bash
