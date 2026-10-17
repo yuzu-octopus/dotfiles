@@ -112,15 +112,6 @@
       "installedAt": "2026-07-14T08:43:13.994Z",
       "updatedAt": "2026-09-05T02:19:11.116Z"
     },
-    "nushell": {
-      "source": "nushell/nu_scripts",
-      "sourceType": "github",
-      "sourceUrl": "https://github.com/nushell/nu_scripts.git",
-      "skillPath": "skills/nushell/SKILL.md",
-      "skillFolderHash": "527969339159e056b7d8d6dc08abf96bbbb21332",
-      "installedAt": "2026-07-15T08:56:36.260Z",
-      "updatedAt": "2026-08-06T05:15:38.283Z"
-    },
     "react-doctor": {
       "source": "aidenybai/react-doctor",
       "sourceType": "github",
