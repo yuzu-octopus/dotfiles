@@ -1,7 +1,7 @@
 ---
 name: no-python3
 description: "Never run python3 or pip/pip3 directly — use uv (uv run, uvx, uv tool) with Python 3.15 default"
-condition: "\b(python3|pip3|pip)\b"
+condition: '\b(python3|pip3|pip)\b'
 scope: "tool:bash"
 ---
 

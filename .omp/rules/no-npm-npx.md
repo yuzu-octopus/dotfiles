@@ -1,7 +1,7 @@
 ---
 name: no-npm-npx
 description: "Never use npm or npx — use bun / bunx instead"
-condition: "\b(npm|npx)\b"
+condition: '\b(npm|npx)\b'
 scope: "tool:bash"
 ---
 

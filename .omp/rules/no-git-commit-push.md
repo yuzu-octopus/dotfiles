@@ -1,7 +1,7 @@
 ---
 name: no-git-commit-push
 description: "Never git commit or push unless the user explicitly asked"
-condition: "\bgit\s+(commit|push)\b"
+condition: '\bgit\s+(commit|push)\b'
 scope: "tool:bash"
 ---
 

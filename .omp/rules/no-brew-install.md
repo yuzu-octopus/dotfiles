@@ -1,7 +1,7 @@
 ---
 name: no-brew-install
 description: "Never run brew install — system-wide installs need explicit user permission; prefer ephemeral or project-scoped tooling"
-condition: "\bbrew\s+(install|i)\b"
+condition: '\bbrew\s+(install|i)\b'
 scope: "tool:bash"
 ---
 

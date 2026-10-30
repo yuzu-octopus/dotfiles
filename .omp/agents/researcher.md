@@ -6,7 +6,7 @@ description: >
   Use for thorough investigations needing primary-source citations.
   NOT for simple lookups (answer directly), codebase questions (scout),
   or library source reading (librarian).
-model: "@research, opencode-zen/muse-spark-1.3-contributor-free:high"
+model: "@slow"
 spawns: "*"
 autoloadSkills:
   - deep-research

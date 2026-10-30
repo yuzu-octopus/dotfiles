@@ -1,7 +1,7 @@
 ---
 name: no-curl-pipe-sh
 description: "Never curl | sh — system-wide installs need explicit user permission"
-condition: "\bcurl\b[^|]*\|\s*(sudo\s+)?(ba)?sh\b"
+condition: '\bcurl\b[^|]*\|\s*(sudo\s+)?(ba)?sh\b'
 scope: "tool:bash"
 ---
 

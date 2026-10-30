@@ -1,7 +1,7 @@
 ---
 name: no-rm-rf
 description: "Never use rm -rf — use trash instead; destructive and irreversible"
-condition: "\brm\s+(-rf|-fr|--recursive\s+--force|--force\s+--recursive)\b"
+condition: '\brm\s+(-rf|-fr|--recursive\s+--force|--force\s+--recursive)\b'
 scope: "tool:bash"
 ---
 
