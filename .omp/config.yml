@@ -1,0 +1,203 @@
+symbolPreset: nerd
+theme:
+  dark: dark-dracula
+setupVersion: 2
+compaction:
+  methodOrder:
+    - remote
+    - snapcompact
+    - soft
+defaultThinkingLevel: auto
+modelRoles:
+  default: opencode-go/deepseek-v4.1-flash:high
+  smol: opencode-go/deepseek-v4.1-flash:low
+  slow: opencode-go/deepseek-v4.1-flash:max
+  vision: opencode-zen/muse-spark-1.3-contributor-free:auto
+  plan: opencode-zen/muse-spark-1.3-contributor-free:high
+  advisor: opencode-zen/muse-spark-1.3-contributor-free:low
+  task: opencode-go/deepseek-v4.1-flash:high
+  web: openai-codex/gpt-6-luna:high
+  tiny: opencode-zen/muse-spark-1.3-contributor-free:low
+memory:
+  backend: mnemopi
+tools:
+  approvalMode: yolo
+disabledProviders:
+  - codex
+  - opencode
+  - groq
+  - mistral
+  - nvidia
+  - ollama
+  - llama.cpp
+  - lm-studio
+  - claude
+statusLine:
+  sessionAccent: true
+  transparent: false
+  compactThinkingLevel: false
+  showHookStatus: true
+  preset: custom
+  leftSegments:
+    - pi
+    - model
+    - mode
+    - collab
+    - path
+    - git
+    - pr
+    - context_pct
+    - cost
+  rightSegments:
+    - token_in
+    - token_out
+    - cache_hit
+  separator: powerline-thin
+  segmentOptions:
+    model:
+      showThinkingLevel: true
+    path:
+      abbreviate: true
+      maxLength: 40
+      stripWorkPrefix: true
+    git:
+      showBranch: true
+      showStaged: true
+      showUnstaged: true
+      showUntracked: true
+  contextLine: embedded
+tui:
+  textSizing: false
+  tight: false
+  renderMermaid: true
+  reactions: true
+  renderSvg: true
+  completeScrollback: false
+display:
+  smoothStreaming: true
+  showTokenUsage: true
+  shimmer: classic
+  hideToolActivity: false
+  showTurnTime: true
+  subagentLivePreview: true
+hideThinkingBlock: true
+steeringMode: all
+interruptMode: wait
+followUpMode: all
+emojiAutocomplete: false
+autoResume: true
+edit:
+  mode: hashline
+bashInterceptor:
+  enabled: false
+bash:
+  autoBackground:
+    enabled: true
+  enabled: true
+  allowCompoundCommands: true
+python:
+  kernelMode: session
+  interpreter: /Users/yuzu/.local/bin/python3
+eval:
+  js: true
+github:
+  enabled: true
+skills:
+  enableSkillCommands: false
+commands:
+  enableOpencodeProject: false
+  enableOpencodeUser: false
+  enableClaudeProject: false
+  enableClaudeUser: false
+mnemopi:
+  polyphonicRecall: true
+  proactiveLinking: true
+  enhancedRecall: true
+  llmMode: smol
+  scoping: per-project-tagged
+showHardwareCursor: true
+personality: default
+snapcompact:
+  toolResults: false
+  shape: auto
+task:
+  eager: default
+  disabledAgents: []
+  showResolvedModelBadge: true
+  maxRecursionDepth: 3
+  enableLsp: false
+  maxConcurrency: 64
+  enableEffort: true
+  perCallModel: "on"
+  maxEffort: max
+  structured: true
+  batch: true
+  file: true
+tts:
+  localVoice: af_heart
+astGrep:
+  enabled: true
+disabledExtensions: []
+autolearn:
+  enabled: true
+advisor:
+  enabled: false
+dev:
+  autoqaConsent: granted
+error:
+  notify: "on"
+shellMinimizer:
+  sourceOutlineLevel: default
+  enabled: true
+cycleOrder:
+  - default
+  - slow
+  - smol
+retry:
+  fallbackChains:
+    web:
+      - google-antigravity/gemini-3.8-flash
+      - web/tinyfish
+      - web/jina
+      - web/public
+      - web/startpage
+      - web/duckduckgo
+      - web/ecosia
+      - web/google
+      - web/parallel
+      - web/mojeek
+      - web/exa
+      - web/tavily
+      - web/firecrawl
+      - web/searxng
+  waitForUsageReset: true
+colorBlindMode: false
+todo:
+  enabled: true
+checkpoint:
+  enabled: false
+exa:
+  enabled: true
+externalThinking: false
+omitThinking: false
+composer:
+  shape: box
+  tokenRate: true
+startup:
+  showSplash: false
+  checkUpdate: true
+lsp:
+  formatOnWrite: false
+browser:
+  headless: true
+spelling:
+  typoDetection: false
+  autocomplete: "off"
+doubleEscapeAction: tree
+terminal:
+  showProgress: false
+title:
+  icons: boring
+autocompleteMaxVisible: 20
+update:
+  auto: true

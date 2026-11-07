@@ -1,0 +1,102 @@
+providers:
+  poolside:
+    baseUrl: https://inference.poolside.ai/v1
+    apiKey: POOLSIDE_API_KEY
+    api: openai-completions
+    authHeader: true
+    models:
+    - id: poolside/laguna-s-2.1
+      name: Poolside Laguna S 2.1
+      reasoning: true
+      thinking:
+        mode: effort
+        efforts:
+        - max
+        defaultLevel: max
+        supportsDisplay: true
+      input:
+      - text
+      supportsTools: true
+      contextWindow: 1048576
+      maxTokens: 32768
+      compat:
+        supportsReasoningParams: true
+        thinkingFormat: qwen-chat-template
+    - id: poolside/laguna-xs-2.1
+      name: Poolside Laguna XS 2.1
+      reasoning: true
+      thinking:
+        mode: effort
+        efforts:
+        - max
+        defaultLevel: max
+        supportsDisplay: true
+      input:
+      - text
+      supportsTools: true
+      contextWindow: 262144
+      maxTokens: 32768
+      compat:
+        supportsReasoningParams: true
+        thinkingFormat: qwen-chat-template
+  agnes:
+    baseUrl: https://apihub.agnes-ai.com/v1
+    apiKey: AGNES_API_KEY
+    api: openai-completions
+    authHeader: true
+    models:
+    - id: agnes-2.5-flash
+      name: Agnes 2.5 Flash
+      reasoning: true
+      thinking:
+        mode: effort
+        efforts:
+        - low
+        - medium
+        - high
+        defaultLevel: medium
+        supportsDisplay: true
+      input:
+      - text
+      - image
+      supportsTools: true
+      cost:
+        input: 0
+        output: 0
+        cacheRead: 0
+        cacheWrite: 0
+      contextWindow: 524288
+      maxTokens: 65536
+      compat:
+        supportsReasoningParams: false
+        extraBody:
+          chat_template_kwargs:
+            enable_thinking: true
+    - id: agnes-2.5-pro-alpha
+      name: Agnes 2.5 Pro Alpha
+      reasoning: true
+      thinking:
+        mode: effort
+        efforts:
+        - low
+        - medium
+        - high
+        - xhigh
+        defaultLevel: high
+        supportsDisplay: true
+      input:
+      - text
+      - image
+      supportsTools: true
+      cost:
+        input: 0.45
+        output: 0.9
+        cacheRead: 0.0038
+        cacheWrite: 0
+      contextWindow: 1048576
+      maxTokens: 65536
+      compat:
+        supportsReasoningParams: false
+        extraBody:
+          chat_template_kwargs:
+            enable_thinking: true

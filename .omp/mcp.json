@@ -1,0 +1,37 @@
+{
+  "$schema": "https://raw.githubusercontent.com/can1357/oh-my-pi/main/packages/coding-agent/src/config/mcp-schema.json",
+  "mcpServers": {
+    "context7": {
+      "type": "http",
+      "url": "https://mcp.context7.com/mcp"
+    },
+    "mineru": {
+      "command": "uvx",
+      "args": [
+        "mineru-open-mcp"
+      ],
+      "timeout": 120000,
+      "env": {
+        "MINERU_API_TOKEN": "MINERU_API_TOKEN"
+      }
+    },
+    "composio": {
+      "type": "http",
+      "url": "https://connect.composio.dev/mcp"
+    },
+    "mcp-pool": {
+      "command": "bunx",
+      "args": [
+        "mcp-pool@latest"
+      ],
+      "enabled": true
+    },
+    "tinyfish": {
+      "type": "http",
+      "url": "https://agent.tinyfish.ai/mcp",
+      "headers": {
+        "X-API-Key": "${TINYFISH_API_KEY}"
+      }
+    }
+  }
+}

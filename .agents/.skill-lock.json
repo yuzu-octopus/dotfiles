@@ -6,9 +6,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/heredotnow/skill.git",
       "skillPath": "here-now/SKILL.md",
-      "skillFolderHash": "581b3417645d0aecad7b80e5ac055bbf8d7b8303",
+      "skillFolderHash": "bffd64a69a37dc2aea53c5afae35ed7f7b14253c",
       "installedAt": "2026-07-10T13:33:15.502Z",
-      "updatedAt": "2026-09-27T07:59:21.920Z"
+      "updatedAt": "2026-11-06T13:24:11.095Z"
     },
     "svg-icon-maker": {
       "source": "heroygt/skills",
@@ -33,9 +33,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/codebase-design/SKILL.md",
-      "skillFolderHash": "07ba1cd60efc12d0d3a083005c1d9651cf15e39a",
+      "skillFolderHash": "4cbe1c131e1ea54109cb1e4e5f3c505810db6606",
       "installedAt": "2026-07-11T05:04:43.736Z",
-      "updatedAt": "2026-10-04T10:47:38.022Z"
+      "updatedAt": "2026-10-29T12:01:30.746Z"
     },
     "domain-modeling": {
       "source": "mattpocock/skills",
@@ -51,9 +51,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/diagnosing-bugs/SKILL.md",
-      "skillFolderHash": "de4236cf34757c4e9ea7afe78d46c023213ff254",
+      "skillFolderHash": "5fdd6cc53385395441910b026c72d71768e993d4",
       "installedAt": "2026-07-11T05:04:47.422Z",
-      "updatedAt": "2026-10-04T10:47:41.423Z"
+      "updatedAt": "2026-10-08T03:08:15.907Z"
     },
     "frontend-design": {
       "source": "anthropics/skills",
@@ -79,10 +79,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/anthropics/skills.git",
       "skillPath": "skills/mcp-builder/SKILL.md",
-      "skillFolderHash": "b866bcfb57b780c10b587c7b543e871a91661ce0",
-      "pluginName": "example-skills",
+      "skillFolderHash": "ea6e4d7bc108b44b3009129688049e23d801f0f3",
       "installedAt": "2026-07-11T05:05:11.212Z",
-      "updatedAt": "2026-07-16T11:33:03.545Z"
+      "updatedAt": "2026-10-29T12:01:36.164Z"
     },
     "webapp-testing": {
       "source": "anthropics/skills",
@@ -108,18 +107,18 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/shadcn/ui.git",
       "skillPath": "skills/shadcn/SKILL.md",
-      "skillFolderHash": "b5791523e07794a4deb201e78eab3f3adbd022c0",
+      "skillFolderHash": "900e3dff4bc1b341db90a147bee6dbed4c2add3c",
       "installedAt": "2026-07-14T08:43:13.994Z",
-      "updatedAt": "2026-09-05T02:19:11.116Z"
+      "updatedAt": "2026-10-15T11:09:39.066Z"
     },
     "react-doctor": {
       "source": "aidenybai/react-doctor",
       "sourceType": "github",
       "sourceUrl": "https://github.com/aidenybai/react-doctor.git",
       "skillPath": "skills/react-doctor/SKILL.md",
-      "skillFolderHash": "cb97b38cae6ea421990b46f2160eae6b77475de5",
+      "skillFolderHash": "d3deec46812d0387d3ff41e6139ec7a44802037f",
       "installedAt": "2026-07-15T09:01:08.462Z",
-      "updatedAt": "2026-10-04T10:47:48.483Z"
+      "updatedAt": "2026-10-15T11:09:43.528Z"
     },
     "find-skills": {
       "source": "vercel-labs/skills",
@@ -135,18 +134,18 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git",
       "skillPath": ".claude/skills/ui-ux-pro-max/SKILL.md",
-      "skillFolderHash": "0b6619c11598d7ce32041044cb2e6fc6adea1efc",
+      "skillFolderHash": "039881fb83556dfeb60b3cce276392ed47eb491b",
       "installedAt": "2026-07-16T11:35:45.963Z",
-      "updatedAt": "2026-10-04T10:47:50.598Z"
+      "updatedAt": "2026-11-06T13:24:11.333Z"
     },
     "improve-codebase-architecture": {
       "source": "mattpocock/skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/improve-codebase-architecture/SKILL.md",
-      "skillFolderHash": "39bd9cc130f7dfcc4e3ea0b3613f6ebed0d0ad2b",
+      "skillFolderHash": "587147dd230da299cc5e84971cb0a33f6676f8a6",
       "installedAt": "2026-07-17T04:48:01.956Z",
-      "updatedAt": "2026-10-04T10:47:42.739Z"
+      "updatedAt": "2026-10-29T12:01:32.980Z"
     },
     "ctf-ai-ml": {
       "source": "yuzu-octopus/ctf-skills",
@@ -162,72 +161,72 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/yuzu-octopus/ctf-skills.git",
       "skillPath": "ctf-crypto/SKILL.md",
-      "skillFolderHash": "50675a22694f36a2157c229bfe1b37775922467d",
+      "skillFolderHash": "ed9ab607f6787ae64a5b6fa492a1ba2cb0020549",
       "installedAt": "2026-07-18T08:26:18.193Z",
-      "updatedAt": "2026-09-17T09:32:13.391Z"
+      "updatedAt": "2026-10-14T00:54:20.286Z"
     },
     "ctf-forensics": {
       "source": "yuzu-octopus/ctf-skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/yuzu-octopus/ctf-skills.git",
       "skillPath": "ctf-forensics/SKILL.md",
-      "skillFolderHash": "c14cabacb32ba622ec5a8683f43846500df045b1",
+      "skillFolderHash": "8615f3432d0fe947a40491825ec939a895497cac",
       "installedAt": "2026-07-18T08:26:18.194Z",
-      "updatedAt": "2026-09-04T03:37:11.975Z"
+      "updatedAt": "2026-10-14T00:54:22.579Z"
     },
     "ctf-malware": {
       "source": "yuzu-octopus/ctf-skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/yuzu-octopus/ctf-skills.git",
       "skillPath": "ctf-malware/SKILL.md",
-      "skillFolderHash": "249938c49bfae6ab133f4d6ed42279d77eee4e5d",
+      "skillFolderHash": "772933f779ba0d613a3b4a0a440dffb53e0c955c",
       "installedAt": "2026-07-18T08:26:18.194Z",
-      "updatedAt": "2026-09-04T03:37:11.975Z"
+      "updatedAt": "2026-10-17T00:58:31.043Z"
     },
     "ctf-misc": {
       "source": "yuzu-octopus/ctf-skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/yuzu-octopus/ctf-skills.git",
       "skillPath": "ctf-misc/SKILL.md",
-      "skillFolderHash": "1bdd0ecdb714cac70c7545b20438b8b66fac562d",
+      "skillFolderHash": "0157a5e7f69720937e886449254fec215b622130",
       "installedAt": "2026-07-18T08:26:18.194Z",
-      "updatedAt": "2026-09-04T03:37:11.976Z"
+      "updatedAt": "2026-10-14T00:54:24.428Z"
     },
     "ctf-osint": {
       "source": "yuzu-octopus/ctf-skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/yuzu-octopus/ctf-skills.git",
       "skillPath": "ctf-osint/SKILL.md",
-      "skillFolderHash": "92deca002e957a084f7d7f7f79230e374b22d8a3",
+      "skillFolderHash": "94919693a9a7d6a5bfc183a70b9a1791cfcaad60",
       "installedAt": "2026-07-18T08:26:18.195Z",
-      "updatedAt": "2026-09-04T03:37:11.976Z"
+      "updatedAt": "2026-10-17T00:58:33.832Z"
     },
     "ctf-pwn": {
       "source": "yuzu-octopus/ctf-skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/yuzu-octopus/ctf-skills.git",
       "skillPath": "ctf-pwn/SKILL.md",
-      "skillFolderHash": "14118c8321619088c9a4f24bbc75fed4d53cc474",
+      "skillFolderHash": "2c7f6d251e2b1ca039b0bbba9f86d0d0dee1cbe5",
       "installedAt": "2026-07-18T08:26:18.195Z",
-      "updatedAt": "2026-09-17T09:32:16.896Z"
+      "updatedAt": "2026-10-17T00:58:36.564Z"
     },
     "ctf-reverse": {
       "source": "yuzu-octopus/ctf-skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/yuzu-octopus/ctf-skills.git",
       "skillPath": "ctf-reverse/SKILL.md",
-      "skillFolderHash": "970fee3b54314a714aeeaaa054d7a6b197d95424",
+      "skillFolderHash": "3d9b9a9e63dcdedb5180831637cdcd77494d9314",
       "installedAt": "2026-07-18T08:26:18.196Z",
-      "updatedAt": "2026-09-04T03:37:11.977Z"
+      "updatedAt": "2026-10-17T00:58:39.166Z"
     },
     "ctf-web": {
       "source": "yuzu-octopus/ctf-skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/yuzu-octopus/ctf-skills.git",
       "skillPath": "ctf-web/SKILL.md",
-      "skillFolderHash": "e4eb1ad5b9be70657c17398ae3b1f595ca54db2f",
+      "skillFolderHash": "ad029fe695cb6e41f631c7dde62c30abf8d8bbe1",
       "installedAt": "2026-07-18T08:26:18.196Z",
-      "updatedAt": "2026-09-04T03:37:11.978Z"
+      "updatedAt": "2026-10-17T00:58:42.358Z"
     },
     "ctf-writeup": {
       "source": "yuzu-octopus/ctf-skills",
@@ -243,18 +242,18 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/yuzu-octopus/ctf-skills.git",
       "skillPath": "solve-challenge/SKILL.md",
-      "skillFolderHash": "9d4284f4b257e49997b76d478854dd216c01d134",
+      "skillFolderHash": "31a0efe1324c93d028edf4ecae14a95823ccf107",
       "installedAt": "2026-07-18T08:26:18.197Z",
-      "updatedAt": "2026-09-04T03:37:11.978Z"
+      "updatedAt": "2026-10-17T00:58:45.040Z"
     },
     "teach": {
       "source": "mattpocock/skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/productivity/teach/SKILL.md",
-      "skillFolderHash": "2ab11f2f51f3c29771edb5d4258d807a49462491",
+      "skillFolderHash": "3fd617b610e59acbb99644de1ef37e394ff53cd1",
       "installedAt": "2026-07-18T09:24:00.363Z",
-      "updatedAt": "2026-08-23T08:08:21.525Z"
+      "updatedAt": "2026-10-08T03:08:17.406Z"
     },
     "prototype": {
       "source": "mattpocock/skills",
@@ -270,27 +269,27 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/googlecolab/google-colab-cli.git",
       "skillPath": "skills/colab-operator/SKILL.md",
-      "skillFolderHash": "03e58c0bae0a16e50de86e80b2db9bfe95dde0c2",
+      "skillFolderHash": "1f19027b061a6440e37eb54e5f5c0ea7b6f6b542",
       "installedAt": "2026-07-28T13:20:50.173Z",
-      "updatedAt": "2026-09-27T07:59:25.698Z"
+      "updatedAt": "2026-10-30T17:04:43.941Z"
     },
     "tdd": {
       "source": "mattpocock/skills",
       "sourceType": "github",
       "sourceUrl": "https://github.com/mattpocock/skills.git",
       "skillPath": "skills/engineering/tdd/SKILL.md",
-      "skillFolderHash": "bf1bf5ffcd63aa8abce830f2955a853c121fb463",
+      "skillFolderHash": "667dbdd00c09d0e2189e082986e6a4d61a67c2a6",
       "installedAt": "2026-07-30T02:12:42.345Z",
-      "updatedAt": "2026-10-04T10:47:44.382Z"
+      "updatedAt": "2026-10-08T03:08:19.053Z"
     },
     "caveman": {
       "source": "JuliusBrussee/caveman",
       "sourceType": "github",
       "sourceUrl": "https://github.com/JuliusBrussee/caveman.git",
       "skillPath": "skills/caveman/SKILL.md",
-      "skillFolderHash": "ce6b7ff0b692d2cd445989bf7e6ce74698aa9a57",
+      "skillFolderHash": "b314dd99b2b8723aae2de5a22079914567f2e58f",
       "installedAt": "2026-08-05T16:52:47.766Z",
-      "updatedAt": "2026-10-04T10:47:52.306Z"
+      "updatedAt": "2026-10-14T00:46:36.405Z"
     },
     "design-system": {
       "source": "nextlevelbuilder/ui-ux-pro-max-skill",
@@ -324,27 +323,27 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/cursor/plugins.git",
       "skillPath": "pstack/skills/unslop/SKILL.md",
-      "skillFolderHash": "d5baa969e71c4ddb563412b0ec170fa3b05b6d6e",
+      "skillFolderHash": "4e572dd70e5557f490e3991c52ea58f0dcee8936",
       "installedAt": "2026-08-24T12:42:56.044Z",
-      "updatedAt": "2026-09-27T07:59:30.089Z"
+      "updatedAt": "2026-10-14T00:46:38.905Z"
     },
     "ponytail": {
       "source": "dietrichgebert/ponytail",
       "sourceType": "github",
       "sourceUrl": "https://github.com/dietrichgebert/ponytail.git",
       "skillPath": "skills/ponytail/SKILL.md",
-      "skillFolderHash": "cb6e53477eaf04e6daeca22feacb85f9ce20d40c",
+      "skillFolderHash": "e8d3fa76e7ff9223a784dbd4bcfc9ff46b3fa55d",
       "installedAt": "2026-08-31T01:07:50.472Z",
-      "updatedAt": "2026-08-31T01:09:45.782Z"
+      "updatedAt": "2026-10-17T00:58:48.634Z"
     },
     "brainstorming": {
       "source": "obra/superpowers",
       "sourceType": "github",
       "sourceUrl": "https://github.com/obra/superpowers.git",
       "skillPath": "skills/brainstorming/SKILL.md",
-      "skillFolderHash": "03d4c6657cd20ba0fce9d270fc688150bd191c3b",
+      "skillFolderHash": "ebd5b1afb600976b12a4c07fedd9c408c1e82f97",
       "installedAt": "2026-08-31T01:08:41.527Z",
-      "updatedAt": "2026-09-19T01:49:14.044Z"
+      "updatedAt": "2026-11-06T13:24:11.370Z"
     },
     "dispatching-parallel-agents": {
       "source": "obra/superpowers",
@@ -360,9 +359,9 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/obra/superpowers.git",
       "skillPath": "skills/executing-plans/SKILL.md",
-      "skillFolderHash": "899ffeab92be3de6cd9ed0078b32737b18b8c135",
+      "skillFolderHash": "3a8438d91d9340747ffd985fdbcfe7238d6e1e57",
       "installedAt": "2026-08-31T01:08:41.530Z",
-      "updatedAt": "2026-09-19T01:49:15.438Z"
+      "updatedAt": "2026-11-06T13:24:11.396Z"
     },
     "finishing-a-development-branch": {
       "source": "obra/superpowers",
@@ -387,27 +386,27 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/obra/superpowers.git",
       "skillPath": "skills/requesting-code-review/SKILL.md",
-      "skillFolderHash": "5fcdadfccd8c90987a11969d2f8c844820fee6e1",
+      "skillFolderHash": "f4a6749898702895ea4fd57c7f186cf43205b99a",
       "installedAt": "2026-08-31T01:08:41.531Z",
-      "updatedAt": "2026-09-19T01:49:17.036Z"
+      "updatedAt": "2026-10-14T00:47:01.315Z"
     },
     "subagent-driven-development": {
       "source": "obra/superpowers",
       "sourceType": "github",
       "sourceUrl": "https://github.com/obra/superpowers.git",
       "skillPath": "skills/subagent-driven-development/SKILL.md",
-      "skillFolderHash": "5d44ced88725298e847c62c67a726dcc29e20d00",
+      "skillFolderHash": "c04a61186680d4cfc6784136d0421cd4abcfb40c",
       "installedAt": "2026-08-31T01:08:41.532Z",
-      "updatedAt": "2026-09-19T01:49:18.446Z"
+      "updatedAt": "2026-11-06T13:24:11.446Z"
     },
     "systematic-debugging": {
       "source": "obra/superpowers",
       "sourceType": "github",
       "sourceUrl": "https://github.com/obra/superpowers.git",
       "skillPath": "skills/systematic-debugging/SKILL.md",
-      "skillFolderHash": "9a48dfda84bf339cba4b03fd803ba0dca2e158e3",
+      "skillFolderHash": "774f23e27e35cb0a89ede39156e7b079fbb84190",
       "installedAt": "2026-08-31T01:08:41.532Z",
-      "updatedAt": "2026-09-19T01:49:19.962Z"
+      "updatedAt": "2026-11-06T13:24:11.475Z"
     },
     "test-driven-development": {
       "source": "obra/superpowers",
@@ -459,63 +458,63 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/obra/superpowers.git",
       "skillPath": "skills/writing-skills/SKILL.md",
-      "skillFolderHash": "f761162236b19330da62b22ad0da20f5dac7c6ab",
+      "skillFolderHash": "660ede63b84ce5d07ef28cccc2973165e2ca06e2",
       "installedAt": "2026-08-31T01:08:41.535Z",
-      "updatedAt": "2026-09-19T01:49:25.926Z"
+      "updatedAt": "2026-10-22T14:51:09.555Z"
     },
     "ponytail-audit": {
       "source": "dietrichgebert/ponytail",
       "sourceType": "github",
       "sourceUrl": "https://github.com/dietrichgebert/ponytail.git",
       "skillPath": "skills/ponytail-audit/SKILL.md",
-      "skillFolderHash": "4e09c473159cca7d3799b01a50784d09bffc64ae",
+      "skillFolderHash": "0c1468092a2b011b7acd369becea098f0c17f1c0",
       "installedAt": "2026-08-31T01:09:45.784Z",
-      "updatedAt": "2026-10-04T10:47:53.929Z"
+      "updatedAt": "2026-10-14T00:46:42.888Z"
     },
     "ponytail-debt": {
       "source": "dietrichgebert/ponytail",
       "sourceType": "github",
       "sourceUrl": "https://github.com/dietrichgebert/ponytail.git",
       "skillPath": "skills/ponytail-debt/SKILL.md",
-      "skillFolderHash": "c9bf71ce830bce18e5bbe277828d56ff20eb3dfb",
+      "skillFolderHash": "16c3b7953629510afa8f061f0fefa61a104e3020",
       "installedAt": "2026-08-31T01:09:45.785Z",
-      "updatedAt": "2026-10-04T10:47:55.560Z"
+      "updatedAt": "2026-10-15T11:09:46.634Z"
     },
     "ponytail-gain": {
       "source": "dietrichgebert/ponytail",
       "sourceType": "github",
       "sourceUrl": "https://github.com/dietrichgebert/ponytail.git",
       "skillPath": "skills/ponytail-gain/SKILL.md",
-      "skillFolderHash": "13724e1903f76456164f00ec2a3074848433588f",
+      "skillFolderHash": "c41e9e90173ddc6844c0bc44a89ba739534e06b0",
       "installedAt": "2026-08-31T01:09:45.785Z",
-      "updatedAt": "2026-08-31T01:09:45.785Z"
+      "updatedAt": "2026-10-15T11:09:49.087Z"
     },
     "ponytail-help": {
       "source": "dietrichgebert/ponytail",
       "sourceType": "github",
       "sourceUrl": "https://github.com/dietrichgebert/ponytail.git",
       "skillPath": "skills/ponytail-help/SKILL.md",
-      "skillFolderHash": "3927d4fb46b93abbfe7da4ce1576e0891ae03005",
+      "skillFolderHash": "f293d9e0ecff5da72cb4accf8a9e4717892cf0ad",
       "installedAt": "2026-08-31T01:09:45.786Z",
-      "updatedAt": "2026-10-04T10:47:57.365Z"
+      "updatedAt": "2026-10-17T00:58:51.000Z"
     },
     "ponytail-review": {
       "source": "dietrichgebert/ponytail",
       "sourceType": "github",
       "sourceUrl": "https://github.com/dietrichgebert/ponytail.git",
       "skillPath": "skills/ponytail-review/SKILL.md",
-      "skillFolderHash": "cecec1713084ba31cda4add0373809c7f28ba8e7",
+      "skillFolderHash": "8ad8430c42a6f8cd18758dddb70cfee399725de6",
       "installedAt": "2026-08-31T01:09:45.786Z",
-      "updatedAt": "2026-10-04T10:47:59.836Z"
+      "updatedAt": "2026-10-14T00:46:55.234Z"
     },
     "kaggle-cli": {
       "source": "kaggle/kaggle-cli",
       "sourceType": "github",
       "sourceUrl": "https://github.com/kaggle/kaggle-cli.git",
       "skillPath": "skills/SKILL.md",
-      "skillFolderHash": "f5c817b8edc91c757e646e385341fa4ebade11f0",
+      "skillFolderHash": "347d6df11774648994ea27b0e32b49b20b3e0cd7",
       "installedAt": "2026-09-01T14:13:09.742Z",
-      "updatedAt": "2026-09-27T07:59:33.900Z"
+      "updatedAt": "2026-10-26T05:22:49.575Z"
     },
     "pytorch-patterns": {
       "source": "affaan-m/ecc",
@@ -525,6 +524,15 @@
       "skillFolderHash": "380f3287dc3e7b1fc7e2f231aee68674e9a7ef0d",
       "installedAt": "2026-09-01T14:13:29.779Z",
       "updatedAt": "2026-09-01T14:13:29.779Z"
+    },
+    "apple-design": {
+      "source": "emilkowalski/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/emilkowalski/skills.git",
+      "skillPath": "skills/apple-design/SKILL.md",
+      "skillFolderHash": "cd509ae729c86487d352e17a26651217a4c25711",
+      "installedAt": "2026-10-08T11:12:17.113Z",
+      "updatedAt": "2026-10-08T11:12:17.113Z"
     }
   },
   "dismissed": {
@@ -532,16 +540,16 @@
   },
   "lastSelectedAgents": [
     "amp",
-    "antigravity",
-    "antigravity-cli",
     "cline",
     "codex",
     "cursor",
-    "deepagents",
+    "droid",
     "gemini-cli",
     "github-copilot",
+    "kilo",
     "kimi-code-cli",
     "opencode",
+    "pi",
     "warp",
     "zed"
   ]
