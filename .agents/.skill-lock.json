@@ -343,7 +343,7 @@
       "skillPath": "skills/brainstorming/SKILL.md",
       "skillFolderHash": "ebd5b1afb600976b12a4c07fedd9c408c1e82f97",
       "installedAt": "2026-08-31T01:08:41.527Z",
-      "updatedAt": "2026-11-06T13:24:11.370Z"
+      "updatedAt": "2026-11-15T04:53:54.161Z"
     },
     "dispatching-parallel-agents": {
       "source": "obra/superpowers",
@@ -352,7 +352,7 @@
       "skillPath": "skills/dispatching-parallel-agents/SKILL.md",
       "skillFolderHash": "15697cb0726c26a66bff737494e8b5266667ba0c",
       "installedAt": "2026-08-31T01:08:41.529Z",
-      "updatedAt": "2026-08-31T01:08:41.529Z"
+      "updatedAt": "2026-11-15T04:53:54.163Z"
     },
     "executing-plans": {
       "source": "obra/superpowers",
@@ -361,7 +361,7 @@
       "skillPath": "skills/executing-plans/SKILL.md",
       "skillFolderHash": "3a8438d91d9340747ffd985fdbcfe7238d6e1e57",
       "installedAt": "2026-08-31T01:08:41.530Z",
-      "updatedAt": "2026-11-06T13:24:11.396Z"
+      "updatedAt": "2026-11-15T04:53:54.164Z"
     },
     "finishing-a-development-branch": {
       "source": "obra/superpowers",
@@ -370,7 +370,7 @@
       "skillPath": "skills/finishing-a-development-branch/SKILL.md",
       "skillFolderHash": "3b1205aa5038c71946077dd63b9e71b447729e70",
       "installedAt": "2026-08-31T01:08:41.530Z",
-      "updatedAt": "2026-08-31T01:08:41.530Z"
+      "updatedAt": "2026-11-15T04:53:54.165Z"
     },
     "receiving-code-review": {
       "source": "obra/superpowers",
@@ -379,7 +379,7 @@
       "skillPath": "skills/receiving-code-review/SKILL.md",
       "skillFolderHash": "b5e154fc3ec7a6a0b1e710eebacc2168620cc428",
       "installedAt": "2026-08-31T01:08:41.531Z",
-      "updatedAt": "2026-08-31T01:08:41.531Z"
+      "updatedAt": "2026-11-15T04:53:54.166Z"
     },
     "requesting-code-review": {
       "source": "obra/superpowers",
@@ -388,7 +388,7 @@
       "skillPath": "skills/requesting-code-review/SKILL.md",
       "skillFolderHash": "f4a6749898702895ea4fd57c7f186cf43205b99a",
       "installedAt": "2026-08-31T01:08:41.531Z",
-      "updatedAt": "2026-10-14T00:47:01.315Z"
+      "updatedAt": "2026-11-15T04:53:54.167Z"
     },
     "subagent-driven-development": {
       "source": "obra/superpowers",
@@ -397,7 +397,7 @@
       "skillPath": "skills/subagent-driven-development/SKILL.md",
       "skillFolderHash": "c04a61186680d4cfc6784136d0421cd4abcfb40c",
       "installedAt": "2026-08-31T01:08:41.532Z",
-      "updatedAt": "2026-11-06T13:24:11.446Z"
+      "updatedAt": "2026-11-15T04:53:54.167Z"
     },
     "systematic-debugging": {
       "source": "obra/superpowers",
@@ -406,7 +406,7 @@
       "skillPath": "skills/systematic-debugging/SKILL.md",
       "skillFolderHash": "774f23e27e35cb0a89ede39156e7b079fbb84190",
       "installedAt": "2026-08-31T01:08:41.532Z",
-      "updatedAt": "2026-11-06T13:24:11.475Z"
+      "updatedAt": "2026-11-15T04:53:54.168Z"
     },
     "test-driven-development": {
       "source": "obra/superpowers",
@@ -415,7 +415,7 @@
       "skillPath": "skills/test-driven-development/SKILL.md",
       "skillFolderHash": "847144cf0824095922c0d4875648b9fa74877e1a",
       "installedAt": "2026-08-31T01:08:41.532Z",
-      "updatedAt": "2026-09-19T01:49:21.382Z"
+      "updatedAt": "2026-11-15T04:53:54.168Z"
     },
     "using-git-worktrees": {
       "source": "obra/superpowers",
@@ -424,7 +424,7 @@
       "skillPath": "skills/using-git-worktrees/SKILL.md",
       "skillFolderHash": "d2b8357b922667a091bfe967840abf5ae84ce99c",
       "installedAt": "2026-08-31T01:08:41.533Z",
-      "updatedAt": "2026-08-31T01:08:41.533Z"
+      "updatedAt": "2026-11-15T04:53:54.169Z"
     },
     "using-superpowers": {
       "source": "obra/superpowers",
@@ -433,7 +433,7 @@
       "skillPath": "skills/using-superpowers/SKILL.md",
       "skillFolderHash": "4c777432715fe58984d212a36aedc6a18472e512",
       "installedAt": "2026-08-31T01:08:41.533Z",
-      "updatedAt": "2026-09-19T01:49:22.858Z"
+      "updatedAt": "2026-11-15T04:53:54.169Z"
     },
     "verification-before-completion": {
       "source": "obra/superpowers",
@@ -442,7 +442,7 @@
       "skillPath": "skills/verification-before-completion/SKILL.md",
       "skillFolderHash": "a4cb0b69aaefeab540947a7f1642bdaad810e37a",
       "installedAt": "2026-08-31T01:08:41.534Z",
-      "updatedAt": "2026-08-31T01:08:41.534Z"
+      "updatedAt": "2026-11-15T04:53:54.170Z"
     },
     "writing-plans": {
       "source": "obra/superpowers",
@@ -451,7 +451,7 @@
       "skillPath": "skills/writing-plans/SKILL.md",
       "skillFolderHash": "cc97fa00eb2ccd4f283e34eb2ba06a48e1e679f7",
       "installedAt": "2026-08-31T01:08:41.534Z",
-      "updatedAt": "2026-09-27T07:59:32.060Z"
+      "updatedAt": "2026-11-15T04:53:54.171Z"
     },
     "writing-skills": {
       "source": "obra/superpowers",
@@ -460,7 +460,7 @@
       "skillPath": "skills/writing-skills/SKILL.md",
       "skillFolderHash": "660ede63b84ce5d07ef28cccc2973165e2ca06e2",
       "installedAt": "2026-08-31T01:08:41.535Z",
-      "updatedAt": "2026-10-22T14:51:09.555Z"
+      "updatedAt": "2026-11-15T04:53:54.171Z"
     },
     "ponytail-audit": {
       "source": "dietrichgebert/ponytail",
@@ -533,6 +533,15 @@
       "skillFolderHash": "cd509ae729c86487d352e17a26651217a4c25711",
       "installedAt": "2026-10-08T11:12:17.113Z",
       "updatedAt": "2026-10-08T11:12:17.113Z"
+    },
+    "diagnosing-superpowers": {
+      "source": "obra/superpowers",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/obra/superpowers.git",
+      "skillPath": "skills/diagnosing-superpowers/SKILL.md",
+      "skillFolderHash": "effb02c345170011be4470c73b99530de43182a7",
+      "installedAt": "2026-11-15T04:53:54.163Z",
+      "updatedAt": "2026-11-15T04:53:54.163Z"
     }
   },
   "dismissed": {
@@ -544,6 +553,7 @@
     "codex",
     "cursor",
     "droid",
+    "fx",
     "gemini-cli",
     "github-copilot",
     "kilo",

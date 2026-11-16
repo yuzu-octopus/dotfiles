@@ -1,7 +1,7 @@
 ---
 name: git-init-commits
 description: "New code projects start with git init; commits stay atomic with conventional messages"
-condition: "\\bgit\\s+(init|commit)\\b"
+condition: '\bgit(?:\s+-[^\s]+(?:\s+[^\s]+)?)*\s+init\b'
 scope: "tool:bash"
 ---
 

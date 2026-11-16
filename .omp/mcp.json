@@ -13,25 +13,28 @@
       "timeout": 120000,
       "env": {
         "MINERU_API_TOKEN": "MINERU_API_TOKEN"
-      }
+      },
+      "enabled": false
     },
     "composio": {
       "type": "http",
       "url": "https://connect.composio.dev/mcp"
     },
     "mcp-pool": {
-      "command": "bunx",
-      "args": [
-        "mcp-pool@latest"
-      ],
+      "command": "mcp-pool",
       "enabled": true
     },
-    "tinyfish": {
+    "browse": {
+      "command": "browse",
+      "args": [
+        "mcp"
+      ],
+      "enabled": false
+    },
+    "superlogical": {
       "type": "http",
-      "url": "https://agent.tinyfish.ai/mcp",
-      "headers": {
-        "X-API-Key": "${TINYFISH_API_KEY}"
-      }
+      "url": "https://www.superlogical.com/rex/community-mcp",
+      "enabled": false
     }
   }
 }

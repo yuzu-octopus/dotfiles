@@ -1,7 +1,7 @@
 ---
 name: no-bash-grep
 description: "Never run BSD grep in bash — use rg or the OMP grep tool (git grep exempt)"
-condition: '(?<!git\s)\b(egrep|fgrep|zgrep|grep)\b'
+condition: '(?m)(?:^|[;&|]+\s*|"(?:command|code)"\s*:\s*"?)(?!(?:[A-Za-z_]\w*=[^\s;&|]*\s+|sudo\s+|env\s+|xargs(?:\s+-[^\s]+)*\s+)*\s*(?:[^\s;&|]*\/)?git\b)(?:[A-Za-z_]\w*=[^\s;&|]*\s+|sudo\s+|env\s+|xargs(?:\s+-[^\s]+)*\s+)*(?<![\w-])(?:egrep|fgrep|zgrep|grep)\b'
 scope: "tool:bash"
 ---
 

@@ -1,7 +1,7 @@
 ---
 name: commit-author-fidelity
 description: "Never hand-pass `user.name`/`user.email` to `git commit`; commit as the configured identity so no tool/agent gets co-attributed as a contributor"
-condition: "git[^\\n]*-c\\s+user\\.(name|email)|user\\.(name|email)="
+condition: 'git[^\n]*-c\s+user\.(name|email)|user\.(name|email)=|--author[= ]|GIT_AUTHOR_(NAME|EMAIL)='
 scope: "tool:bash"
 ---
 

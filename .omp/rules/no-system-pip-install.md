@@ -1,7 +1,7 @@
 ---
 name: no-system-pip-install
 description: "Never install Python packages into system Python via pip or uv pip --system — use uv/project-local tooling instead"
-condition: '\bpip3?\s+(install|uninstall)\b|uv\s+pip\s+(install|uninstall|sync)\s+.*--system\b'
+condition: '(?<!uv )(?<!uv  )\bpip(?:\d|\.\d+)*(?:\s+)(install|uninstall)\b|\buv\s+pip\b[^\n]*--system\b'
 scope: "tool:bash"
 ---
 

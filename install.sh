@@ -105,7 +105,8 @@ if want omp-rules; then
     for f in composio.md git-init-commits.md commit-author-fidelity.md \
              no-bash-grep.md no-brew-install.md no-curl-pipe-sh.md \
              no-git-commit-push.md no-npm-npx.md no-python3.md \
-             no-rm-rf.md no-system-pip-install.md; do
+             no-rm-rf.md no-system-pip-install.md \
+             no-unsanctioned-global-paths.md no-unsanctioned-shell-writes.md; do
         put ".omp/rules/$f" "$HOME/.omp/agent/rules/$f"
     done
 fi
@@ -117,11 +118,11 @@ fi
 
 if want omp-scripts; then
     for f in scripts/append-header.md scripts/append-footer.md \
-             scripts/build-append-system.py scripts/gossip.py; do
+             scripts/build-append-system.py scripts/gossip.py scripts/test-rules.py; do
         put ".omp/$f" "$HOME/.omp/agent/$f"
     done
     if [ "$DRY" = 0 ]; then
-        chmod +x "$HOME/.omp/agent/scripts/build-append-system.py" "$HOME/.omp/agent/scripts/gossip.py" 2>/dev/null
+        chmod +x "$HOME/.omp/agent/scripts/build-append-system.py" "$HOME/.omp/agent/scripts/gossip.py" "$HOME/.omp/agent/scripts/test-rules.py" 2>/dev/null
     fi
 fi
 

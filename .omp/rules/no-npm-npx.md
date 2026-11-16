@@ -1,7 +1,7 @@
 ---
 name: no-npm-npx
 description: "Never use npm or npx — use bun / bunx instead"
-condition: '\b(npm|npx)\b'
+condition: '(?:^|[;&|]+\s*|"(?:command|code)"\s*:\s*"?)(?:[A-Za-z_][A-Za-z0-9_]*=[^\s;&|]+\s+|sudo\s+|env\s+|command\s+|time\s+|nohup\s+|bash\s+-c\s+(?:\\?["''])?|sh\s+-c\s+(?:\\?["''])?|xargs\s+)?\b(npm|npx)\b(?=\s|$)'
 scope: "tool:bash"
 ---
 

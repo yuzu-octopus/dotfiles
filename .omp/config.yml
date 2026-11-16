@@ -1,7 +1,7 @@
 symbolPreset: nerd
 theme:
   dark: dark-dracula
-setupVersion: 2
+setupVersion: 3
 compaction:
   methodOrder:
     - remote
@@ -9,15 +9,10 @@ compaction:
     - soft
 defaultThinkingLevel: auto
 modelRoles:
-  default: opencode-go/deepseek-v4.1-flash:high
-  smol: opencode-go/deepseek-v4.1-flash:low
-  slow: opencode-go/deepseek-v4.1-flash:max
-  vision: opencode-zen/muse-spark-1.3-contributor-free:auto
-  plan: opencode-zen/muse-spark-1.3-contributor-free:high
-  advisor: opencode-zen/muse-spark-1.3-contributor-free:low
-  task: opencode-go/deepseek-v4.1-flash:high
-  web: openai-codex/gpt-6-luna:high
-  tiny: opencode-zen/muse-spark-1.3-contributor-free:low
+  default: opencode-go/hy4-flash-free:xhigh
+  smol: opencode-go/hy4-flash-free:high
+  slow: opencode-go/hy4-flash-free:xhigh
+  task: opencode-go/hy4-flash-free:xhigh
 memory:
   backend: mnemopi
 tools:
@@ -97,7 +92,7 @@ bash:
   allowCompoundCommands: true
 python:
   kernelMode: session
-  interpreter: /Users/yuzu/.local/bin/python3
+  interpreter: ~/.local/bin/python3
 eval:
   js: true
 github:
@@ -132,7 +127,7 @@ task:
   maxEffort: max
   structured: true
   batch: true
-  file: true
+  file: false
 tts:
   localVoice: af_heart
 astGrep:
@@ -170,6 +165,8 @@ retry:
       - web/tavily
       - web/firecrawl
       - web/searxng
+    opencode-go/hy4-flash-free:
+      - opencode-go/muse-spark-1.3-contributor
   waitForUsageReset: true
 colorBlindMode: false
 todo:

@@ -43,7 +43,7 @@
 
 - Execution is default: for a well-scoped request, inspect context, implement, verify, and report. Write a plan only for cross-cutting/high-risk work or when asked.
 - Use `skill://prototype` only to answer one uncertain UI or state-model question. Validate its verdict, apply decision to production work, and keep prototype code off main.
-- Only after deciding a subagent is genuinely needed, classify its assignment: codebase exploration → scout (broad search); external API/library research → librarian; correctness/security review → reviewer; UI work → designer; mechanical edits/data collection → sonic; implementation or mixed work → task. This routing guidance MUST NOT encourage unnecessary delegation.
+- Only after deciding a subagent is genuinely needed, classify its assignment: codebase exploration → scout (broad search); external API/library research → researcher with context7 (gossip for community reaction); correctness/security review → reviewer / security-reviewer; UI work → task with ui-styling/frontend-design; mechanical edits/data collection → sonic; implementation or mixed work → task. This routing guidance MUST NOT encourage unnecessary delegation.
 - Omit `agent` for generic `task` work when it should inherit the active model. Use explicit specialist routing only when it materially improves quality, cost, or tool access.
 
 ## Code
