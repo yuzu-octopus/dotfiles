@@ -29,6 +29,17 @@ for arg in "$@"; do
     esac
 done
 
+for g in ${WANT[@]+"${WANT[@]}"}; do
+    case "$g" in
+        terminal|lint|omp|omp-context|omp-agents|omp-rules|omp-skills|omp-scripts|omp-configs) ;;
+        *)
+            echo "unknown group: $g" >&2
+            echo "valid groups: terminal lint omp omp-context omp-agents omp-rules omp-skills omp-scripts omp-configs" >&2
+            exit 2
+            ;;
+    esac
+done
+
 DOT="$(cd "$(dirname "$0")" && pwd)"
 
 put() { # put <repo-rel-src> <dest-abs-path>

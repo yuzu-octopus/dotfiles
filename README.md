@@ -52,16 +52,15 @@ your shell.
 - **[biome/biome.json](./biome/biome.json)** — Global Biome config
   (tabs, 100 cols, double quotes, organizeImports). Fallback only
 - **[.omp/](./.omp/)** — Agent context: AGENTS, APPEND_SYSTEM, PERSONALITY,
-  RULES, five agent definitions (researcher, gossip, codebase-memory family),
-  two skills (deep-research, codebase-memory), ten rules. Account emails
-  redacted; re-add locally.
+  RULES, two agent definitions (researcher, gossip), one skill
+  (deep-research), thirteen rules. Account emails redacted; re-add locally.
 - **[.agents/.skill-lock.json](./.agents/.skill-lock.json)** — Manifest of
-  the 59 global skills (sources, hashes). Reference copy; not installed
-  by install.sh.
+  the 60 global skills (sources, hashes), installed to
+  `~/.agents/.skill-lock.json` by `install.sh`.
 
-`APPEND_SYSTEM.md` is generated, not hand-edited. After `npx skills update`,
+`APPEND_SYSTEM.md` is generated, not hand-edited. After `bunx skills update`,
 run `~/.omp/agent/scripts/build-append-system.py` to re-splice the ponytail,
-caveman, unslop, and codebase-memory skill bodies into the header and footer
+caveman, and unslop skill bodies into the header and footer
 fragments. Overrides in that script fail loudly when upstream text drifts, so
 a silent regeneration can never drop a local deviation.
 
