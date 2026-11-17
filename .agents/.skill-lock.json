@@ -6,9 +6,10 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/heredotnow/skill.git",
       "skillPath": "here-now/SKILL.md",
-      "skillFolderHash": "bffd64a69a37dc2aea53c5afae35ed7f7b14253c",
+      "skillFolderHash": "8e6b69444e392a7e3d2ff6b232091cc4c985751a",
       "installedAt": "2026-07-10T13:33:15.502Z",
-      "updatedAt": "2026-11-06T13:24:11.095Z"
+      "updatedAt": "2026-11-17T06:14:25.189Z",
+      "commit": "88bb6b4b1b5c2e3252dbc55e9a1369c330441c38"
     },
     "svg-icon-maker": {
       "source": "heroygt/skills",
@@ -116,9 +117,10 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/aidenybai/react-doctor.git",
       "skillPath": "skills/react-doctor/SKILL.md",
-      "skillFolderHash": "d3deec46812d0387d3ff41e6139ec7a44802037f",
+      "skillFolderHash": "373a8c37b83fd28c08029006f8b1e914152c4ba2",
       "installedAt": "2026-07-15T09:01:08.462Z",
-      "updatedAt": "2026-10-15T11:09:43.528Z"
+      "updatedAt": "2026-11-17T06:14:25.398Z",
+      "commit": "190b5b69d1acd304976aab09f5ad8d86274310ef"
     },
     "find-skills": {
       "source": "vercel-labs/skills",
@@ -134,9 +136,10 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git",
       "skillPath": ".claude/skills/ui-ux-pro-max/SKILL.md",
-      "skillFolderHash": "039881fb83556dfeb60b3cce276392ed47eb491b",
+      "skillFolderHash": "b6f08c13f95a4854694f41113e0b4935c741deb1",
       "installedAt": "2026-07-16T11:35:45.963Z",
-      "updatedAt": "2026-11-06T13:24:11.333Z"
+      "updatedAt": "2026-11-17T06:14:25.612Z",
+      "commit": "e59ff376a41f7ca47b7541ad5c116495cbade3ee"
     },
     "improve-codebase-architecture": {
       "source": "mattpocock/skills",
@@ -269,9 +272,10 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/googlecolab/google-colab-cli.git",
       "skillPath": "skills/colab-operator/SKILL.md",
-      "skillFolderHash": "1f19027b061a6440e37eb54e5f5c0ea7b6f6b542",
+      "skillFolderHash": "47b7cc47f72e597bef392b2a292e7ba6b330c057",
       "installedAt": "2026-07-28T13:20:50.173Z",
-      "updatedAt": "2026-10-30T17:04:43.941Z"
+      "updatedAt": "2026-11-17T06:14:25.982Z",
+      "commit": "02d2321c38dd215b7804eebf78b61d98b856bcd3"
     },
     "tdd": {
       "source": "mattpocock/skills",
@@ -296,18 +300,20 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git",
       "skillPath": ".claude/skills/design-system/SKILL.md",
-      "skillFolderHash": "4b60947279d885f917ba7baae9154f75ed3d3c1b",
+      "skillFolderHash": "7e87cf933457bb27fdfc818e2de69dede4eddd2c",
       "installedAt": "2026-08-06T05:15:07.694Z",
-      "updatedAt": "2026-09-03T13:38:13.594Z"
+      "updatedAt": "2026-11-17T06:14:25.705Z",
+      "commit": "e59ff376a41f7ca47b7541ad5c116495cbade3ee"
     },
     "ui-styling": {
       "source": "nextlevelbuilder/ui-ux-pro-max-skill",
       "sourceType": "github",
       "sourceUrl": "https://github.com/nextlevelbuilder/ui-ux-pro-max-skill.git",
       "skillPath": ".claude/skills/ui-styling/SKILL.md",
-      "skillFolderHash": "700e4c528244263c7ae8a3c679eea425967c06a1",
+      "skillFolderHash": "2279643473f0c0a0f8d791a5b2b02bf9804d3167",
       "installedAt": "2026-08-06T05:15:07.696Z",
-      "updatedAt": "2026-09-19T01:49:12.587Z"
+      "updatedAt": "2026-11-17T06:14:25.966Z",
+      "commit": "e59ff376a41f7ca47b7541ad5c116495cbade3ee"
     },
     "create-readme": {
       "source": "github/awesome-copilot",
@@ -323,9 +329,10 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/cursor/plugins.git",
       "skillPath": "pstack/skills/unslop/SKILL.md",
-      "skillFolderHash": "4e572dd70e5557f490e3991c52ea58f0dcee8936",
+      "skillFolderHash": "3319d5baa095167501a128703a008446dd099d0c",
       "installedAt": "2026-08-24T12:42:56.044Z",
-      "updatedAt": "2026-10-14T00:46:38.905Z"
+      "updatedAt": "2026-11-17T06:14:26.076Z",
+      "commit": "3fa33bb0f927bea2ccacd48a3cfda95145fb6bae"
     },
     "ponytail": {
       "source": "dietrichgebert/ponytail",
@@ -530,9 +537,10 @@
       "sourceType": "github",
       "sourceUrl": "https://github.com/emilkowalski/skills.git",
       "skillPath": "skills/apple-design/SKILL.md",
-      "skillFolderHash": "cd509ae729c86487d352e17a26651217a4c25711",
+      "skillFolderHash": "9bfcd2e17dbac4b390ab231bbf9bd3f3734b21ff",
       "installedAt": "2026-10-08T11:12:17.113Z",
-      "updatedAt": "2026-10-08T11:12:17.113Z"
+      "updatedAt": "2026-11-17T06:14:26.090Z",
+      "commit": "64eb3deb9a5fbfa041faf783e0bc3fd635872e9c"
     },
     "diagnosing-superpowers": {
       "source": "obra/superpowers",

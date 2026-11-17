@@ -128,7 +128,7 @@ if want omp-skills; then
 fi
 
 if want omp-scripts; then
-    for f in scripts/append-header.md scripts/append-footer.md \
+    for f in scripts/append-header.md \
              scripts/build-append-system.py scripts/gossip.py scripts/test-rules.py; do
         put ".omp/$f" "$HOME/.omp/agent/$f"
     done
